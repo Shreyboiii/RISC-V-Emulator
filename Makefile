@@ -1,5 +1,5 @@
-PROG = project04
-OBJS = project04.o rv_emu.o bits.o cache.o verbose.o \
+PROG = emulator
+OBJS = main.o rv_emu.o bits.o cache.o verbose.o \
 	   fib_rec_c.o fib_rec_s.o                       \
 	   find_max_index_c.o find_max_index_s.o         \
        get_bitseq_c.o get_bitseq_s.o                 \
@@ -12,7 +12,7 @@ OBJS = project04.o rv_emu.o bits.o cache.o verbose.o \
 	   sort_c.o sort_s.o                             \
 	   to_upper_c.o to_upper_s.o
 
-HEADERS = project04.h rv_emu.h
+HEADERS = project.h rv_emu.h
 
 %.o: %.c $(HEADERS)
 	gcc -g -c -o $@ $<

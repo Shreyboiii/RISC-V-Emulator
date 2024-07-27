@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "project04.h"
+#include "project.h"
 #include "rv_emu.h"
 
 extern bool g_verbose;
